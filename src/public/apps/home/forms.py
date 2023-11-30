@@ -1,22 +1,20 @@
-from django import forms
-import re
-from django.contrib.auth.models import User
-
-class RegistrationForm(forms.Form):
-    email = forms.EmailField(label='Email')
-    password = forms.CharField(label='password', widget=forms.PasswordInput())
-
-    def clean_password2(self):
-        if 'password' in self.cleaned_data:
-            password = self.cleaned_data['password']
-        raise forms.ValidationError("There is something wrong !")
-
-    def clean_username(self):
-        username = self.cleaned_data['username']
-        if not re.search(r'^\w+&', username):
-            raise forms.ValidationError("The account name contains special characters")
-        try:
-            User.objects.get(username=username)
-        except User.DoesNotExist:
-            return username
-        raise forms.ValidationError("Account existed!")
+# from django import forms
+# from django.contrib.auth.forms import UserCreationForm
+# from django.contrib.auth.models import User
+#
+#
+# # Create your forms here.
+#
+# class NewUserForm(UserCreationForm):
+# 	email = forms.EmailField(required=True)
+#
+# 	class Meta:
+# 		model = User
+# 		fields = ("username", "email", "password1", "password2")
+#
+# 	def save(self, commit=True):
+# 		user = super(NewUserForm, self).save(commit=False)
+# 		user.email = self.cleaned_data['email']
+# 		if commit:
+# 			user.save()
+# 		return user

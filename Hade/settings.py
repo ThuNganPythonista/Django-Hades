@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # custom app : có nghia là muốn dẫn đến app tên "home" thì app mình thêm vào sẽ là
     # app dạng custom nên phải dùng HomeConfig
     'graphene_django',
+    'user',
 
 ]
 
@@ -131,3 +132,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 GRAPHENE = {
     "SCHEMA": "Hade.schema.schema"
 }
+
+AUTH_USER_MODEL = "user.CustomUser"
+
