@@ -171,6 +171,8 @@ additionally :
         def get(self, request):
              return render(request=request, template_name="home/login-index.html")
 ```
+
+
 + The first one, GET method, when users click to the register button, for instance, it returns the register template (HTML). This is because the GET method will take data from server.
 
 + The second one, POST method, when users already filled in their information and press the button register, that information will be sent to database. This is because the POST method will handle a request sent to server.
