@@ -2,7 +2,7 @@
 *Note : You have to install Python first and then follow the commands to set up a Django project. In this project, I run on Pycharm. If not sure, you can learn Django before starting this project. Please read the code Hade and the instructions at the same time, so you can have better comprehension* 
 ##### Step 1 : Create app  "Home" in Django and add static files .. ####
 - We will arrange it like this :
-    + Src folder (the root directory of the project): 
+    + Src folder (the root directory of the project)
     + core : code for core applications
     + public :
       + apps
