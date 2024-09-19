@@ -128,6 +128,7 @@ Why ? This is because admin interface serves as a tool for model  !
 *Take note* : to call "models" file, you type "src" and then press enter, choosing the correct one to  make sure exactly. You are no need type by yourself. The component "*" means ALL, and collect ALL in models.py in this case.
 
 ##### STEP 10 : How to register our models ? how the code looks like ?    #####
+
 For example :
 
 ```python
