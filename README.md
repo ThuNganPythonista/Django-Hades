@@ -17,7 +17,7 @@ To understand "static" file can visit the official django website : [static file
 
    - Look at the line "INSTALLED_APP" and add one more line below `    'django.contrib.staticfiles',
 ` : it means that you already add static file for the app.
-  - Declare the app if you want to move to the app by writing down the code `src.public.apps.home.apps.HomeConfig` : This is because we already custom the app, so we need to use the component `HomeConfig`. If you do not custom the app, you just need to add the name of the app.
+  - Declare the app if you want to move to the app by writing down the code `src.public.apps.home.apps.HomeConfig` : This is because we already custom the app, so we need to use the component `HomeConfig`. If you do not custom the app, you just need to add the name of the app
 
 ##### Step3 : Add the path to the app and static file in urls.py #####
 
