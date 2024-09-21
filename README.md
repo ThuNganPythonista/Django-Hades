@@ -1,5 +1,8 @@
-#  INSTRUCTIONS : Build a Backend for a website with Django
-*Note : You have to install Python first and then follow the commands to set up a Django project. In this project, I run on Pycharm. If not sure, you can learn Django before starting this project. Please read the code Hade and the instructions at the same time, so you can have better comprehension* 
+# INSTRUCTIONS: 
+Build a backend for a website using Django. 
+
+*Note: You need to install Python first, then follow the commands to set up a Django project. In this project, I am using PyCharm. If you're unsure, you can learn Django before starting. Please read the code and instructions simultaneously for better comprehension.*
+
 ##### Step 1 : Create app  "Home" in Django and add static files .. ####
 - We will arrange it like this :
     + Src folder (the root directory of the project)
