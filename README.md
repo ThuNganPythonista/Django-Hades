@@ -4,16 +4,22 @@ Build a backend for a website using Django.
 *Note: You need to install Python first, then follow the commands to set up a Django project. In this project, I am using PyCharm. If you're unsure, you can learn Django before starting. Please read the code and instructions simultaneously for better comprehension.*
 
 ##### Step 1 : Create app  "Home" in Django and add static files .. ####
-- We will arrange it like this :
-    + Src folder (the root directory of the project)
-    + core : code for core applications
-    + public :
-      + apps
-      + media : contains photos 
-      + static : remember to load static first
-      + templates : This folder includes 3 important things. One is home folder to contain all of your html file. One is product folder to contain the details each of items. The last one is "base.html" file which will be a template for every page of website
-- Run this command to add static files : `python manage.py collectstatic`
+Here's a revised and grammatically correct version of your text:
 
+- We will organize the project as follows:
+    + **Src folder** (the root directory of the project)
+    + **core**: Contains code for core applications
+    + **public**:
+      + **apps**
+      + **media**: Contains photos
+      + **static**: Remember to load static files first
+      + **templates**: This folder includes three important sections:
+        + **home folder**: Contains all of your HTML files
+        + **product folder**: Contains the details for each item
+        + **base.html**: A template file that will be used for every page of the website
+
+- Run this command to add static files:  
+  `python manage.py collectstatic`
 To understand "static" file can visit the official django website : [static files (images, JavaScript, CSS) in detail] (https://docs.djangoproject.com/en/4.2/howto/static-files/)
 
 ##### Step 2 : Add the app in settings.py #####
