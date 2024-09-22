@@ -21,12 +21,17 @@ Build a backend for a website using Django.
   `python manage.py collectstatic`
 To understand "static" file can visit the official django website : [static files (images, JavaScript, CSS) in detail] (https://docs.djangoproject.com/en/4.2/howto/static-files/)
 
-##### Step 2 : Add the app in settings.py #####
 
-   - Look at the line "INSTALLED_APP" and add one more line below `    'django.contrib.staticfiles',
-` : it means that you already add static file for the app.
-  - Declare the app if you want to move to the app by writing down the code `src.public.apps.home.apps.HomeConfig` : This is because we already custom the app, so we need to use the component `HomeConfig`. If you do not custom the app, you just need to add the name of the app
+##### Step 2: Add the app in `settings.py` #####
 
+- Look for the line `"INSTALLED_APPS"` and add a new line below `'django.contrib.staticfiles',`. This means you are enabling static file handling for the app.
+  
+- To declare the app, if you want to reference it, add the following code:  
+  `src.public.apps.home.apps.HomeConfig`.  
+
+  This is because we've customized the app, so we need to use the `HomeConfig` component. If you haven't customized the app, you only need to add the app's name.
+
+  
 ##### Step3 : Add the path to the app and static file in urls.py #####
 
 (*) remember to import these functions first :
