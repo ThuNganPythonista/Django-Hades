@@ -32,19 +32,25 @@ To understand "static" file can visit the official django website : [static file
   This is because we've customized the app, so we need to use the `HomeConfig` component. If you haven't customized the app, you only need to add the app's name.
 
   
-##### Step3 : Add the path to the app and static file in urls.py #####
+##### Step 3: Add the path to the app and static files in urls.py#####
 
-(*) remember to import these functions first :
+Remember to import these functions first:
 
-    from django.urls import path,include
-    from django.conf.urls.static import static
-    from django.conf import settings
+```python
+from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
+```
 
-(*) and then you add the path. However, remember to type only some of the first letters and then enter to print it out. Do not type by yourself
+Then, add the path. However, remember to type only the first few letters and then press Enter to autocomplete. Do not type it manually.
 
-`    path('', include('src.public.apps.home.urls'), name="app-home"),
+```python
+path('', include('src.public.apps.home.urls'), name="app-home"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-`
+```
+
+
+
  ##### Step 4 : Django's app configuration  #####
 
  Let's break down each part :
