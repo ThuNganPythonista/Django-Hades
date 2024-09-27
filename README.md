@@ -137,7 +137,7 @@ Similarly, we will divide elements for child table and parent table for our shop
 => When customers click "Size" category to pick, it will show all options that we already set default (S,M,L,XL). Without __ str__, it will indicate nothing when consumers click it.
 
 
-##### Step 9 : Of course ! We'll move immediately to admin.py after adding models #####
+##### Step 9 : Of course ! We'll move immediately to admin.py after adding models ####
 
 Why ? This is because admin interface serves as a tool for model  !
 
