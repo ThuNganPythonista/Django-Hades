@@ -285,7 +285,7 @@ Let me explain each part :
 
 `'  ' ` : the first empty space, we will name it. This one will be url name on the web
 
-`as_view()` : covert class-based view into a view function
+`as_view()` : covert class-based view into a view function.
 
 `name = " "` : The name argument gives the URL pattern a name, which is important for reversing URLs in code and templates using the {% url% } HTML template. You link your html template with this url by this way "NAME".
 
