@@ -381,7 +381,7 @@ We use " Except as e " instead of " Except" because it helps us print out the sp
 
 `					<a href ="{% url 'register-file' %}">Register  </a> `
 
-Here, it names `register-file`
+Here, it names `register-file`.
 
 4) Yes, the last step always is declaration its name and url :
 
