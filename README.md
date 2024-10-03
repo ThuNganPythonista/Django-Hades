@@ -29,7 +29,7 @@ To understand "static" file can visit the official django website : [static file
 - To declare the app, if you want to reference it, add the following code:  
   `src.public.apps.home.apps.HomeConfig`.  
 
-  This is because we've customized the app, so we need to use the `HomeConfig` component. If you haven't customized the app, you only need to add the app's name.
+  This is because we've customized the app, so we need to use the `HomeConfig` component. If you haven't customized the app, you only need to add the app's name..
 
   
 ##### Step 3: Add the path to the app and static files in urls.py#####
