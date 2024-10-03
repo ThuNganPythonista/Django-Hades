@@ -96,32 +96,33 @@ Therefore, we will use these two code lines `{% block content %} {% endblock con
    + Later, we will add more classes such as classes for products or login.
    + We class instead of def to help us add more subclass or inheritance ect..
 
-##### Step 7 : OKAY, Let's start to custom other HTML files #####
-+   Do you remember we code the line `{% block content %} {% endblock content %}` in base.html file?
+
+##### Step 7: OKAY, Let's start customizing other HTML files #####
+
++ Do you remember we added the line `{% block content %} {% endblock content %}` in the `base.html` file?
     
-    --> Correct ! Now, we will insert this html content to that place.
-+ You just need to follow the format :
+    --> Correct! Now, we will insert the specific HTML content into that block.
++ Follow this format for each HTML file:
     ```python
-    {% extends 'base.html' %} #call to base.html file
-    {% load static %} #call static file to add its css or js for html
-    {% block title %}HADES SINGAPORE{% endblock title %} #Title for the page
+    {% extends 'base.html' %}  # Refers to base.html file
+    {% load static %}  # Loads static files for adding CSS or JS
+    {% block title %}HADES SINGAPORE{% endblock title %}  # Page title
     {% block content %}
-        #please place your content here
-    {% endblock content%}
-  ```
-##### Step 8 : Let's add database in models.py  #####
- * Explain : models.py will help owners add and manage their products. For instance, owners of the shop will add one more stock or fix something. 
- * You should fully comprehend the concept of foreign key in SQL to do this. There is a website to show you how it works [W3 School](https://www.w3schools.com/sql/sql_foreignkey.asp). 
- * Okay !! Now, you already know that foreign key is child table and primary key is parent table
+        <!-- Place your content here -->
+    {% endblock content %}
+    ```
 
- ##### So, which one will be the child table in this project and vice versa ? #####
-   
-Now, you should image a vast tree with so numerous branches, and one of them either sprouts more child branches or not. Regarding with the strong main branches without sprouting more, we call it primary key. Meanwhile, child branches will serve as foreign key.
+##### Step 8: Let's add the database in `models.py` #####
 
+* Explanation: The `models.py` file helps store owners manage their products. For instance, store owners can add new stock or update existing items.
+* You should fully understand the concept of a **foreign key** in SQL before proceeding. This [W3Schools page](https://www.w3schools.com/sql/sql_foreignkey.asp) provides a helpful explanation.
+* Now, you already know that a foreign key represents the child table, and a primary key represents the parent table.
 
-Similarly, we will divide elements for child table and parent table for our shop like that. Child table is foreign key and parent table is primary key.
+##### So, which one will be the child table in this project, and which will be the parent table? #####
 
-![git version](./media/container-img/a.png)
+Imagine a large tree with numerous branches. Some branches sprout more child branches, while others do not. The strong, main branches that don't sprout further are like **primary keys**, while the branches that do sprout more are like **foreign keys**.
+
+Similarly, we will classify elements in our shop's database in the same way. The **child table** will contain the foreign key, and the **parent table** will contain the primary key.
 
 ##### Do you know why "size" is foreign key ? #####
 
